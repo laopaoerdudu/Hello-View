@@ -28,4 +28,4 @@ gradlew.bat
 /.idea/vcs.xml
 /repo/com/wwe/*
 
-repo/
+.idea/gradle.xml
