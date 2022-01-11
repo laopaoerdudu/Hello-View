@@ -17,17 +17,37 @@
 
 [全新的 Fragment: 使用新的状态管理器](https://mp.weixin.qq.com/s/vNf9rDt3RxDPVacR9-e7Yw)
 
+[Fragment 11 年的迭代...这一次深入了解它的原理](https://mp.weixin.qq.com/s/UApUiqNkAYW0muAuvQOdeg)
+
+[你真的懂 Fragment 吗？Fragment 的过去、现在和未来~](https://mp.weixin.qq.com/s/VPJDRhjOqHX0_l7FGJ4FEQ)
+
+[androidx 来袭，Fragment 可见性监听方案，多种 case 完美兼容！](https://mp.weixin.qq.com/s/_QEloSDCC9KbH4Cj1rU8OQ)
+
 #### WebView
+
+#### Other
+
+[再看 LayoutInflater，这次你可能又会有新的认识](https://mp.weixin.qq.com/s/id8ESD94ixfhxslZWk-cEw)
+
+[requestLayout 竟然涉及到这么多知识点](https://mp.weixin.qq.com/s/moQq-Ga9pSSFP5amYqYkkw)
+
+[requestLayout 这么问？谁能会？](https://mp.weixin.qq.com/s/BeYCM6AUsJ9qzhb5_XAweQ)
+
+#### RecyclerView
+
+[RecyclerView 多样式 Item 优雅方案之旅](https://mp.weixin.qq.com/s/YvBuUDX0WgQUBnBQ-9EYjQ)
+
+[RecyclerView高级进阶之优雅地解决瀑布流的两个神坑](https://mp.weixin.qq.com/s/r87WZQ5iy48DxAJY05auGg)
+
+[聊聊RecyclerView新出的ConcatAdapter如何使用](https://mp.weixin.qq.com/s/mAbexdFHIq7h2B7HU2nxqg)
+
+[对RecyclerView中使用Adapter中的一点思考（RecyclerView 多布局）](https://juejin.cn/post/6844903586778857479)
 
 #### View
 
 [Android 各种View坐标彻底明了](https://mp.weixin.qq.com/s/65YdUUqOxaaR85NpgRpIhA)
 
 [这样学习View的测量算法，真的很有趣哦](https://mp.weixin.qq.com/s/Gi0aTXTObak0VWlniwk4oQ)
-
-[RecyclerView高级进阶之优雅地解决瀑布流的两个神坑](https://mp.weixin.qq.com/s/r87WZQ5iy48DxAJY05auGg)
-
-[聊聊RecyclerView新出的ConcatAdapter如何使用](https://mp.weixin.qq.com/s/mAbexdFHIq7h2B7HU2nxqg)
 
 [Kotlin 自定义 ViewGroup](https://juejin.cn/post/6971600374792880136)
 
@@ -44,8 +64,6 @@
 [深入理解自定义 ViewGroup 的布局测量过程](https://juejin.cn/post/6893699917458604046)
 
 [一篇文章搞懂Android 自定义 viewgroup 的难点](https://juejin.cn/post/6844903622233292807)
-
-[对RecyclerView中使用Adapter中的一点思考（RecyclerView 多布局）](https://juejin.cn/post/6844903586778857479)
 
 [Android自定义view重难点突破 范围裁切 三维变换 以及绘制顺序](https://juejin.cn/post/6844903619762864142)
 
