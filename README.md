@@ -8,3 +8,5 @@
 [聊聊RecyclerView新出的ConcatAdapter如何使用](https://mp.weixin.qq.com/s/mAbexdFHIq7h2B7HU2nxqg)
 
 [Fragment 间传递数据的新方式](https://juejin.cn/post/6844904151508320263)
+
+[一文读懂 Fragment 的方方面面](https://juejin.cn/post/7006970844542926855)
