@@ -1,7 +1,5 @@
 ## POC Test for View
 
-[Kotlin 写自定义 ViewGroup](https://juejin.cn/post/7005008352396722213?utm_source=gold_browser_extension)
-
 [一篇文章搞懂Android 自定义 viewgroup 的难点](https://juejin.cn/post/6844903622233292807)
 
 [这样学习View的测量算法，真的很有趣哦](https://mp.weixin.qq.com/s/Gi0aTXTObak0VWlniwk4oQ)
