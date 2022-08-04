@@ -14,8 +14,8 @@ class BannerImageView @JvmOverloads constructor(
     private var ratio: Float = 0.1f
 
     init {
-        val typedArray = context.obtainStyledAttributes(attrs, R.styleable.BannerImageView)
-        ratio = typedArray.getFloat(R.styleable.BannerImageView_ratio, 0.0f)
+        val typedArray = context.obtainStyledAttributes(attrs, R.styleable.BannerImageViewFeature)
+        ratio = typedArray.getFloat(R.styleable.BannerImageViewFeature_ratio, 0.0f)
         typedArray.recycle()
     }
 
