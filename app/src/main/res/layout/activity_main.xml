@@ -18,30 +18,72 @@
         android:layout_marginTop="20dp"
         app:ratio="0.5"/>
 
-    <com.rko.widget.MyVerticalLinerLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginStart="10dp"
+    <com.rko.widget.FlowLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
         app:layout_constraintTop_toBottomOf="@id/ivBannerIcon"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintEnd_toEndOf="parent">
 
-        <Button
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:text="Rollins" />
+        <TextView
+            style="@style/text_flag_01"
+            android:text="Welcome" />
 
-        <Button
-            android:layout_width="250dp"
-            android:layout_height="150dp"
-            android:text="Roman-Reigns" />
+        <TextView
+            style="@style/text_flag_01"
+            android:text="IT工程师" />
 
-        <Button
-            android:layout_width="200dp"
-            android:layout_height="75dp"
-            android:text="Randy" />
+        <TextView
+            style="@style/text_flag_01"
+            android:text="学习ing" />
 
-    </com.rko.widget.MyVerticalLinerLayout>
+        <TextView
+            style="@style/text_flag_01"
+            android:text="恋爱ing" />
+
+        <TextView
+            style="@style/text_flag_02"
+            android:text="恋爱ing" />
+
+        <TextView
+            style="@style/text_flag_02"
+            android:text="挣钱ing" />
+
+        <TextView
+            style="@style/text_flag_02"
+            android:text="努力ing" />
+
+        <TextView
+            style="@style/text_flag_02"
+            android:text="I thick i can" />
+    </com.rko.widget.FlowLayout>
+
+<!--    <com.rko.widget.MyVerticalLinerLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/ivBannerIcon"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent">-->
+
+<!--        <Button-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:text="Rollins" />-->
+
+<!--        <Button-->
+<!--            android:layout_width="250dp"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:text="Roman-Reigns" />-->
+
+<!--        <Button-->
+<!--            android:layout_width="200dp"-->
+<!--            android:layout_height="75dp"-->
+<!--            android:text="Randy" />-->
+
+<!--    </com.rko.widget.MyVerticalLinerLayout>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

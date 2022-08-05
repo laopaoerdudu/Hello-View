@@ -2,6 +2,7 @@ package com.rko.widget
 
 import android.content.Context
 import android.util.AttributeSet
+import android.util.Log
 import android.view.ViewGroup
 
 class FlowLayout @JvmOverloads constructor(
@@ -52,15 +53,17 @@ class FlowLayout @JvmOverloads constructor(
             }
 
             childViewLayoutParams?.let {
+                Log.i("WWE", "#56 invoked!")
                 viewPositionList.add(
                     i, PositionModel(
-                        left = lineWidth - (childViewUsedWidth + it.leftMargin),
-                        top = resultHeight - (childViewUsedHeight + it.topMargin),
+                        left = lineWidth - childViewUsedWidth + it.leftMargin,
+                        top = resultHeight - childViewUsedHeight + it.topMargin,
                         right = lineWidth - it.rightMargin,
                         bottom = resultHeight - it.bottomMargin
                     )
                 )
             } ?: run {
+                Log.i("WWE", "#66 invoked!")
                 viewPositionList.add(
                     i, PositionModel(
                         left = lineWidth - childViewUsedWidth,
