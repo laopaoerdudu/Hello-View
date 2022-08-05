@@ -14,14 +14,14 @@
         android:scaleType="centerCrop"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
         app:ratio="0.5"/>
 
     <com.rko.widget.MyVerticalLinerLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="20dp"
+        android:layout_marginStart="10dp"
         app:layout_constraintTop_toBottomOf="@id/ivBannerIcon"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
