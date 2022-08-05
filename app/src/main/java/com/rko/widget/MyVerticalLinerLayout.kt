@@ -2,6 +2,7 @@ package com.rko.widget
 
 import android.content.Context
 import android.util.AttributeSet
+import android.util.Log
 import android.view.ViewGroup
 
 class MyVerticalLinerLayout @JvmOverloads constructor(
@@ -24,18 +25,22 @@ class MyVerticalLinerLayout @JvmOverloads constructor(
 
         when {
             widthSpecMode == MeasureSpec.AT_MOST && heightSpecModel == MeasureSpec.AT_MOST -> {
+                Log.i("WWE", "#28 invoked")
                 setMeasuredDimension(getMaxWidth(), getTotalHeight())
             }
 
             widthSpecMode == MeasureSpec.AT_MOST -> {
+                Log.i("WWE", "#33 invoked")
                 setMeasuredDimension(getMaxWidth(), heightSpecSize)
             }
 
             heightSpecModel == MeasureSpec.AT_MOST -> {
+                Log.i("WWE", "#38 invoked")
                 setMeasuredDimension(widthSpecSize, getTotalHeight())
             }
 
             else -> {
+                Log.i("WWE", "#43 invoked")
                 setMeasuredDimension(widthSpecSize, heightSpecSize)
             }
         }
