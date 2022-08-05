@@ -21,7 +21,6 @@ class BannerImageView @JvmOverloads constructor(
 
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec)
-        Log.i("WWE", "ratio: $ratio")
         setMeasuredDimension(measuredWidth, (measuredWidth * ratio).toInt())
     }
 }

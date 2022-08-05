@@ -41,7 +41,7 @@ class MyVerticalLinerLayout @JvmOverloads constructor(
 
             else -> {
                 Log.i("WWE", "#43 invoked")
-                setMeasuredDimension(widthSpecSize, heightSpecSize)
+                setMeasuredDimension(widthSpecSize, getTotalHeight())
             }
         }
     }

@@ -16,6 +16,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onWindowFocusChanged(hasFocus: Boolean) {
         super.onWindowFocusChanged(hasFocus)
-        Log.i("WWE", "Width: ${image.width}, Height: ${image.height}")
+        // Log.i("WWE", "Width: ${image.width}, Height: ${image.height}")
     }
 }
