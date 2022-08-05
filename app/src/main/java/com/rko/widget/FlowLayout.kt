@@ -5,6 +5,7 @@ import android.util.AttributeSet
 import android.util.Log
 import android.view.ViewGroup
 
+// Ref: https://github.com/superSp/FlowLayout/blob/master/library/src/main/java/lsp/com/library/FlowLayout.java
 class FlowLayout @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
