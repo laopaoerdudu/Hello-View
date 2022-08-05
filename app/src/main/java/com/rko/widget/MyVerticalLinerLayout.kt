@@ -17,7 +17,7 @@ class MyVerticalLinerLayout @JvmOverloads constructor(
         // 将所有的子 View 进行测量
         measureChildren(widthMeasureSpec, heightMeasureSpec)
 
-        // MyFlowLayout 的相关测量策略
+        // 获取 MyFlowLayout 的相关测量策略
         val widthSpecMode = MeasureSpec.getMode(widthMeasureSpec)
         val widthSpecSize = MeasureSpec.getSize(widthMeasureSpec)
         val heightSpecModel = MeasureSpec.getMode(heightMeasureSpec)
