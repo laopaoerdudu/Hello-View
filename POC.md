@@ -115,11 +115,89 @@ public boolean performClick() {
     return false;
 }
 ```
+当你点击了某个控件，首先会去调用该控件所在布局的 `dispatchTouchEvent(...)` 方法，
+如果我们点击了 MyLayout 中的按钮，会先去调用 MyLayout 的 `dispatchTouchEvent` 方法，可是你会发现 MyLayout 中并没有这个方法。
+那就再到它的父类 LinearLayout 中找一找，发现也没有这个方法。那只好继续再去 LinearLayout 的父类 ViewGroup 中去找，
+你终于在 ViewGroup 中找到了这个方法，按钮的 `dispatchTouchEvent` 方法就是在这里调用的。
 
-我们都知道如果给一个控件注册了 touch 事件，每次点击它的时候都会触发一系列的 `ACTION_DOWN`，`ACTION_MOVE`，`ACTION_UP` 等事件。
-这里需要注意，如果你在执行 `ACTION_DOWN` 的时候返回了 false，后面一系列其它的 action 就不会再得到执行了。简单的说，
-就是当 `dispatchTouchEvent` 在进行事件分发的时候，只有前一个 action 返回 true，才会触发后一个 action。
-
+```
+# ViewGroup.java
+public boolean dispatchTouchEvent(MotionEvent ev) {
+    final int action = ev.getAction();
+    final float xf = ev.getX();
+    final float yf = ev.getY();
+    final float scrolledXFloat = xf + mScrollX;
+    final float scrolledYFloat = yf + mScrollY;
+    final Rect frame = mTempRect;
+    boolean disallowIntercept = (mGroupFlags & FLAG_DISALLOW_INTERCEPT) != 0;
+    if (action == MotionEvent.ACTION_DOWN) {
+        if (mMotionTarget != null) {
+            mMotionTarget = null;
+        }
+        if (disallowIntercept || !onInterceptTouchEvent(ev)) {
+            ev.setAction(MotionEvent.ACTION_DOWN);
+            final int scrolledXInt = (int) scrolledXFloat;
+            final int scrolledYInt = (int) scrolledYFloat;
+            final View[] children = mChildren;
+            final int count = mChildrenCount;
+            for (int i = count - 1; i >= 0; i--) {
+                final View child = children[i];
+                if ((child.mViewFlags & VISIBILITY_MASK) == VISIBLE
+                        || child.getAnimation() != null) {
+                    child.getHitRect(frame);
+                    if (frame.contains(scrolledXInt, scrolledYInt)) {
+                        final float xc = scrolledXFloat - child.mLeft;
+                        final float yc = scrolledYFloat - child.mTop;
+                        ev.setLocation(xc, yc);
+                        child.mPrivateFlags &= ~CANCEL_NEXT_UP_EVENT;
+                        if (child.dispatchTouchEvent(ev))  {
+                            mMotionTarget = child;
+                            return true;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    boolean isUpOrCancel = (action == MotionEvent.ACTION_UP) ||
+            (action == MotionEvent.ACTION_CANCEL);
+    if (isUpOrCancel) {
+        mGroupFlags &= ~FLAG_DISALLOW_INTERCEPT;
+    }
+    final View target = mMotionTarget;
+    if (target == null) {
+        ev.setLocation(xf, yf);
+        if ((mPrivateFlags & CANCEL_NEXT_UP_EVENT) != 0) {
+            ev.setAction(MotionEvent.ACTION_CANCEL);
+            mPrivateFlags &= ~CANCEL_NEXT_UP_EVENT;
+        }
+        return super.dispatchTouchEvent(ev);
+    }
+    if (!disallowIntercept && onInterceptTouchEvent(ev)) {
+        final float xc = scrolledXFloat - (float) target.mLeft;
+        final float yc = scrolledYFloat - (float) target.mTop;
+        mPrivateFlags &= ~CANCEL_NEXT_UP_EVENT;
+        ev.setAction(MotionEvent.ACTION_CANCEL);
+        ev.setLocation(xc, yc);
+        if (!target.dispatchTouchEvent(ev)) {
+        }
+        mMotionTarget = null;
+        return true;
+    }
+    if (isUpOrCancel) {
+        mMotionTarget = null;
+    }
+    final float xc = scrolledXFloat - (float) target.mLeft;
+    final float yc = scrolledYFloat - (float) target.mTop;
+    ev.setLocation(xc, yc);
+    if ((target.mPrivateFlags & CANCEL_NEXT_UP_EVENT) != 0) {
+        ev.setAction(MotionEvent.ACTION_CANCEL);
+        target.mPrivateFlags &= ~CANCEL_NEXT_UP_EVENT;
+        mMotionTarget = null;
+    }
+    return target.dispatchTouchEvent(ev);
+}
+```
 
 
 
