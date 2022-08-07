@@ -9,7 +9,7 @@
     <com.rko.widget.BannerImageView
         android:id="@+id/ivBannerIcon"
         android:layout_width="150dp"
-        android:layout_height="200dp"
+        android:layout_height="1000dp"
         android:src="@mipmap/river"
         android:scaleType="centerCrop"
         app:layout_constraintLeft_toLeftOf="parent"
