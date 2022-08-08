@@ -12,6 +12,6 @@ class MyLayout @JvmOverloads constructor(
 ) : LinearLayout(context, attrs, defStyleAttr) {
 
     override fun onInterceptTouchEvent(ev: MotionEvent?): Boolean {
-        return true
+        return false
     }
 }
