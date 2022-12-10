@@ -14,6 +14,7 @@
       <map>
         <entry key="app/src/main/res/drawable/flag_01.xml" value="0.1345" />
         <entry key="app/src/main/res/drawable/flag_02.xml" value="0.1345" />
+        <entry key="app/src/main/res/layout/activity_guide_line.xml" value="0.26358695652173914" />
         <entry key="app/src/main/res/layout/viewgroup_poc_layout.xml" value="0.1947463768115942" />
         <entry key="fragment-backstack-app/src/main/res/layout/activity_main.xml" value="0.24682971014492755" />
       </map>
@@ -99,7 +100,7 @@
       <textMaps />
     </LinkMapSettings>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
