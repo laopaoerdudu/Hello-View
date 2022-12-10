@@ -29,3 +29,4 @@ gradlew.bat
 /repo/com/wwe/*
 
 .idea/gradle.xml
+.idea/misc.xml
