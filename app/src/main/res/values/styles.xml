@@ -1,18 +1,3 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="text_flag_01">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_margin">8dp</item>
-        <item name="android:gravity">center</item>
-        <item name="android:background">@drawable/flag_01</item>
-    </style>
-
-    <style name="text_flag_02">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:gravity">center</item>
-        <item name="android:layout_margin">8dp</item>
-        <item name="android:background">@drawable/flag_02</item>
-    </style>
 </resources>
