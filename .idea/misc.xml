@@ -14,7 +14,9 @@
       <map>
         <entry key="app/src/main/res/drawable/flag_01.xml" value="0.1345" />
         <entry key="app/src/main/res/drawable/flag_02.xml" value="0.1345" />
+        <entry key="app/src/main/res/layout/activity_collapsing_toolbar.xml" value="0.24864130434782608" />
         <entry key="app/src/main/res/layout/activity_guide_line.xml" value="0.26358695652173914" />
+        <entry key="app/src/main/res/layout/content_scrolling.xml" value="0.24864130434782608" />
         <entry key="app/src/main/res/layout/viewgroup_poc_layout.xml" value="0.1947463768115942" />
         <entry key="fragment-backstack-app/src/main/res/layout/activity_main.xml" value="0.24682971014492755" />
       </map>
