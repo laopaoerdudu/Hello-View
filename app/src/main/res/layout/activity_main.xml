@@ -7,16 +7,61 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.rko.MyAttrView
-        app:attr_str="Hello Attr"
-        app:attr_bool="true"
-        app:attr_int="99"
-        app:attr_ref="@dimen/dp_100"
-        android:layout_width="100px"
-        android:layout_height="100px"
+    <TextView
+        android:id="@+id/textStyleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
-    </com.rko.MyAttrView>
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        tools:text="Hello WWE"/>
+
+    <TextView
+        android:id="@+id/typefaceTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:typeface="monospace"
+        app:layout_constraintTop_toBottomOf="@id/textStyleTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        tools:text="Hello WWE"/>
+
+    <TextView
+        android:id="@+id/fontFamilyTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-light"
+        app:layout_constraintTop_toBottomOf="@id/typefaceTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        tools:text="Hello WWE"/>
+
+    <TextView
+        android:id="@+id/fontTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:fontFamily="@font/noto_serif_tc_bold"
+        app:layout_constraintTop_toBottomOf="@id/fontFamilyTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Hello WWE"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textAppearance="@style/customfontstyle"
+        app:layout_constraintTop_toBottomOf="@id/fontTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Hello WWE"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

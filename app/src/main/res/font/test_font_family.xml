@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="UnusedAttribute">
+
+    <font
+        android:font="@font/noto_serif_tc_regular"
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        tools:ignore="UnusedAttribute" />
+
+    <font
+        android:font="@font/noto_serif_tc_bold"
+        android:fontStyle="normal"
+        android:fontWeight="400" />
+</font-family>
