@@ -5,7 +5,7 @@
 
 ## ViewStub
 
-当我们需要根据条件判断来显示哪个 view 的时候，当我们明确知道需要显示哪个 vie w的时候，通过 `ViewStub` 把实际视图 inflate 进来，这样就避免了资源浪费。
+当我们需要根据条件判断来显示哪个 view 的时候，当我们明确知道需要显示哪个 view 的时候，通过 `ViewStub` 把实际视图 inflate 进来，这样就避免了资源浪费。
 
 ```
 <ViewStub
@@ -23,7 +23,7 @@ val importPanel: View = findViewById<ViewStub>(R.id.stub_import).inflate()
 
 ## tools:visibility / tools:text
 
-通过 `tools:visibility="visible"` 来预览显示的效果，省得再编译运行造数据了，方便又提效。
+通过 `tools:visibility="visible"` 来预览显示的效果，省得再编译运行数据了，方便又提效。
 使用 `tools:text` 属性就可以预览字符超限的效果。
 
 ## RecyclerView 相关
