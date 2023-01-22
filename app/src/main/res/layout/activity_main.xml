@@ -7,4 +7,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <com.rko.MyAttrView
+        app:attr_str="Hello Attr"
+        app:attr_bool="true"
+        app:attr_int="99"
+        app:attr_ref="@dimen/dp_100"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+    </com.rko.MyAttrView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

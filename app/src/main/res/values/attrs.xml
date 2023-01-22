@@ -1,3 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!-- 将若干个属性声明归结到 MyStyleable 里，这些属性声明属于"同一组"。 -->
+    <declare-styleable name="MyStyleable">
+        <attr name="attr_str" format="string"></attr>
+        <attr name="attr_bool" format="boolean"></attr>
+        <attr name="attr_int" format="integer"></attr>
+        <attr name="attr_ref" format="reference"></attr>
+    </declare-styleable>
 </resources>
+
+<!-- reference 指向其它资源 -->
