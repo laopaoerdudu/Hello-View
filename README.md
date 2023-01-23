@@ -81,7 +81,9 @@ mTv.setTypeface(Typeface.create("sans-serif-medium", Typeface.NORMAL))
 
 - 通过配置应用主题，全局替换默认字体
 
+Ref:
 
+https://juejin.cn/post/6975333037240221727
 
 
 
