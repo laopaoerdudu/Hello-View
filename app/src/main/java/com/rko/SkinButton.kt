@@ -6,6 +6,7 @@ import android.content.res.Resources
 import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatButton
 
+/** skinApkPath -> packageInfo -> Skin-Resource  */
 class SkinButton @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null
 ) : AppCompatButton(context, attrs), SkinSupportable {
