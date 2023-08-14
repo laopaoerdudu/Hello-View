@@ -7,4 +7,30 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <com.rko.widgets.GrayLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drew"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="30dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WWE"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="30dp" />
+
+    </com.rko.widgets.GrayLinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
