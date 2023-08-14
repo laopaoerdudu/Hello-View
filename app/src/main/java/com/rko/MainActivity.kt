@@ -11,7 +11,7 @@ import java.lang.Exception
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.test_layout)
 
         // int drawableId = resources.getIdentifier("shark", "drawable", "com.skin.skin_pack_making");
     }
